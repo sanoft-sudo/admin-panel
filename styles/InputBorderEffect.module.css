@@ -1,0 +1,277 @@
+.effect1,
+.effect2,
+.effect3 {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.effect1 ~ .focusBorder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #20bf9c;
+  transition: 0.4s;
+}
+.effect1:focus ~ .focusBorder {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.effect2 ~ .focusBorder {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #20bf9c;
+  transition: 0.4s;
+}
+.effect2:focus ~ .focusBorder {
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
+
+.effect3 ~ .focusBorder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  z-index: 99;
+}
+.effect3 ~ .focusBorder:before,
+.effect3 ~ .focusBorder:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #20bf9c;
+  transition: 0.4s;
+}
+.effect3 ~ .focusBorder:after {
+  left: auto;
+  right: 0;
+}
+.effect3:focus ~ .focusBorder:before,
+.effect3:focus ~ .focusBorder:after {
+  width: 50%;
+  transition: 0.4s;
+}
+
+.effect4,
+.effect5,
+.effect6 {
+  border: 0;
+  padding: 5px 0 7px;
+  border: 1px solid transparent;
+  border-bottom-color: #ccc;
+  transition: 0.4s;
+}
+
+.effect4:focus,
+.effect5:focus,
+.effect6:focus {
+  padding: 5px 14px 7px;
+  transition: 0.4s;
+}
+
+.effect4 ~ .focusBorder {
+  position: absolute;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.4s;
+  z-index: -1;
+}
+.effect4:focus ~ .focusBorder {
+  transition: 0.4s;
+  height: 36px;
+  border: 2px solid #20bf9c;
+  z-index: 1;
+}
+
+.effect5 ~ .focusBorder {
+  position: absolute;
+  height: 36px;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: 0.4s;
+}
+.effect5:focus ~ .focusBorder {
+  width: 100%;
+  transition: 0.4s;
+  border: 2px solid #20bf9c;
+}
+
+.effect6 ~ .focusBorder {
+  position: absolute;
+  height: 36px;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  transition: 0.4s;
+}
+.effect6:focus ~ .focusBorder {
+  width: 100%;
+  transition: 0.4s;
+  border: 2px solid #20bf9c;
+}
+
+.effect7,
+.effect8,
+.effect9 {
+  border: 1px solid #ccc;
+  padding: 7px 14px 9px;
+  transition: 0.4s;
+}
+
+.effect7 ~ .focusBorder:before,
+.effect7 ~ .focusBorder:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #20bf9c;
+  transition: 0.4s;
+}
+.effect7 ~ .focusBorder:after {
+  top: auto;
+  bottom: 0;
+}
+.effect7 ~ .focusBorder i:before,
+.effect7 ~ .focusBorder i:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #20bf9c;
+  transition: 0.6s;
+}
+.effect7 ~ .focusBorder i:after {
+  left: auto;
+  right: 0;
+}
+.effect7:focus ~ .focusBorder:before,
+.effect7:focus ~ .focusBorder:after {
+  left: 0;
+  width: 100%;
+  transition: 0.4s;
+}
+.effect7:focus ~ .focusBorder i:before,
+.effect7:focus ~ .focusBorder i:after {
+  top: 0;
+  height: 100%;
+  transition: 0.6s;
+}
+
+.effect8 ~ .focusBorder:before,
+.effect8 ~ .focusBorder:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #20bf9c;
+  transition: 0.3s;
+}
+.effect8 ~ .focusBorder:after {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+.effect8 ~ .focusBorder i:before,
+.effect8 ~ .focusBorder i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #20bf9c;
+  transition: 0.4s;
+}
+.effect8 ~ .focusBorder i:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.effect8:focus ~ .focusBorder:before,
+.effect8:focus ~ .focusBorder:after {
+  width: 100%;
+  transition: 0.3s;
+}
+.effect8:focus ~ .focusBorder i:before,
+.effect8:focus ~ .focusBorder i:after {
+  height: 100%;
+  transition: 0.4s;
+}
+
+.effect9 ~ .focusBorder:before,
+.effect9 ~ .focusBorder:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #20bf9c;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+}
+.effect9 ~ .focusBorder:after {
+  top: auto;
+  bottom: 0;
+  right: auto;
+  left: 0;
+  transition-delay: 0.6s;
+}
+.effect9 ~ .focusBorder i:before,
+.effect9 ~ .focusBorder i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #20bf9c;
+  transition: 0.2s;
+}
+.effect9 ~ .focusBorder i:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+  transition-delay: 0.4s;
+}
+.effect9:focus ~ .focusBorder:before,
+.effect9:focus ~ .focusBorder:after {
+  width: 100%;
+  transition: 0.2s;
+  transition-delay: 0.6s;
+}
+.effect9:focus ~ .focusBorder:after {
+  transition-delay: 0.2s;
+}
+.effect9:focus ~ .focusBorder i:before,
+.effect9:focus ~ .focusBorder i:after {
+  height: 100%;
+  transition: 0.2s;
+}
+.effect9:focus ~ .focusBorder i:after {
+  transition-delay: 0.4s;
+}

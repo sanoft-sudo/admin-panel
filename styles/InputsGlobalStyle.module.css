@@ -1,0 +1,121 @@
+/* necessary to give position: relative to parent. */
+.effect1,
+  .effect2,
+  .effect3,
+  .effect4,
+  .effect5,
+  .effect6,
+  .effect7,
+  .effect8,
+  .effect9,
+  .effect10, 
+  .effect11, 
+  .effect12, 
+  .effect13, 
+  .effect14, 
+  .effect15, 
+  .effect16, 
+  .effect17, 
+  .effect18, 
+  .effect19, 
+  .effect20, 
+  .effect21, 
+  .effect22, 
+  .effect23, 
+  .effect24  {
+    font: 15px/24px "Muli", sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+  }
+  
+  .effect1:focus,
+  .effect2:focus,
+  .effect3:focus,
+  .effect4:focus,
+  .effect5:focus,
+  .effect6:focus,
+  .effect7:focus,
+  .effect8:focus,
+  .effect9:focus,
+  .effect10:focus, 
+  .effect11:focus, 
+  .effect12:focus, 
+  .effect13:focus, 
+  .effect14:focus, 
+  .effect15:focus, 
+  .effect16:focus, 
+  .effect17:focus, 
+  .effect18:focus, 
+  .effect19:focus, 
+  .effect20:focus, 
+  .effect21:focus, 
+  .effect22:focus, 
+  .effect23:focus, 
+  .effect24:focus {
+    outline: none;
+  }
+  
+  .colmd3 {
+    float: left;
+    width: 27.33%;
+    margin: 40px 3%;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (max-width: 600px) {
+    .colmd3 {
+    float: left;
+    width: 95%;
+    margin: 20px 3%;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  }
+  @media (min-width: 600px) and ( max-width: 768px) {
+    .colmd3 {
+    float: left;
+    width: 43.99%;
+    margin: 20px 3%;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  }
+  
+  
+  /* necessary to give position: relative to parent. */
+  .effect1,
+  .effect2,
+  .effect3,
+  .effect4,
+  .effect5,
+  .effect6,
+  .effect7,
+  .effect8,
+  .effect9,
+  .effect10, 
+  .effect11, 
+  .effect12, 
+  .effect13, 
+  .effect14, 
+  .effect15, 
+  .effect16, 
+  .effect17, 
+  .effect18, 
+  .effect19, 
+  .effect20, 
+  .effect21, 
+  .effect22, 
+  .effect23, 
+  .effect24 {
+    font: 15px/24px "Lato", Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+  }
+  
